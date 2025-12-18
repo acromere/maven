@@ -1,9 +1,11 @@
-[build-status]: https://github.com/avereon/maven/workflows/Avereon%20Maven%20CI/badge.svg "Build status"
+[build-status]: https://github.com/acromere/maven/workflows/ci.yml/badge.svg "Build status"
 
-# Avereon Maven Parent POMs ![alt text][build-status]
+# Acromere Maven Parent POMs
 
-This project maintains the parent poms used by the Avereon group. The parent poms
-define common configuration, resources and definitions for all Avereon projects.
+![alt text][build-status]
+
+This project maintains the parent poms used by the Acromere group. The parent poms
+define common configuration, resources and definitions for all Acromere projects.
 
 ## POM Hierarchy
 
@@ -15,7 +17,7 @@ define common configuration, resources and definitions for all Avereon projects.
       - prg - The parent pom for programs
       - mod - The parent pom for modules
 - web - The parent pom of web projects. The parent of web projects is the 
-  spring-boot-parent pom and not the Avereon top pom.
+  spring-boot-parent pom and not the Acromere top pom.
 
 ## Builds
 
