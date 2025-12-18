@@ -1,8 +1,8 @@
-[build-status]: https://github.com/acromere/maven/workflows/ci.yml/badge.svg "Build status"
+[build-status]: https://github.com/acromere/maven/actions/workflows/ci.yml/badge.svg "Build status"
 
 # Acromere Maven Parent POMs
 
-![alt text][build-status]
+![Build Status][build-status]
 
 This project maintains the parent poms used by the Acromere group. The parent poms
 define common configuration, resources and definitions for all Acromere projects.
