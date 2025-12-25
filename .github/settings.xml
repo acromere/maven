@@ -6,17 +6,17 @@
 
 	<servers>
 		<server>
-			<id>avn-release</id>
+			<id>acm-release</id>
 			<username>${env.AVN_REPO_USERNAME}</username>
 			<password>${env.AVN_REPO_PASSWORD}</password>
 		</server>
 		<server>
-			<id>avn-snapshot</id>
+			<id>acm-snapshot</id>
 			<username>${env.AVN_REPO_USERNAME}</username>
 			<password>${env.AVN_REPO_PASSWORD}</password>
 		</server>
 		<server>
-			<id>avn-mirror</id>
+			<id>acm-mirror</id>
 			<username>${env.AVN_REPO_USERNAME}</username>
 			<password>${env.AVN_REPO_PASSWORD}</password>
 		</server>
@@ -24,15 +24,15 @@
 
 	<mirrors>
 		<mirror>
-			<id>avn-mirror</id>
-			<name>Mirror to Avereon Maven Repository</name>
-			<url>https://repo.avereon.com/avn</url>
+			<id>acm-mirror</id>
+			<name>Mirror to Acromere Maven Repository</name>
+			<url>https://repo.acromere.com/acm</url>
 			<mirrorOf>*,!central</mirrorOf>
 		</mirror>
 <!--		<mirror>-->
 <!--			<id>central-mirror</id>-->
-<!--			<name>Mirror to Avereon Maven Repository</name>-->
-<!--			<url>https://repo.avereon.com/central</url>-->
+<!--			<name>Mirror to Acromere Maven Repository</name>-->
+<!--			<url>https://repo.acromere.com/central</url>-->
 <!--			<mirrorOf>central</mirrorOf>-->
 <!--		</mirror>-->
 	</mirrors>

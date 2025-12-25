@@ -4,31 +4,31 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.avereon.pom</groupId>
+	<groupId>com.acromere.pom</groupId>
 	<artifactId>agg</artifactId>
-	<version>3.7-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>Avereon Pom Aggregator</name>
-	<inceptionYear>2017</inceptionYear>
+	<name>Acromere Pom Aggregator</name>
+	<inceptionYear>2025</inceptionYear>
 
 	<repositories>
 		<repository>
-			<id>avn</id>
-			<url>https://repo.avereon.com/avn</url>
+			<id>acromere</id>
+			<url>https://repo.acromere.com/acromere</url>
 		</repository>
 	</repositories>
 
 	<distributionManagement>
 		<repository>
-			<id>avn-release</id>
-			<name>Avereon Apache Maven Release Repository</name>
-			<url>https://repo.avereon.com/avn-release</url>
+			<id>acromere-release</id>
+			<name>Acromere Apache Maven Release Repository</name>
+			<url>https://repo.acromere.com/acromere-release</url>
 		</repository>
 		<snapshotRepository>
-			<id>avn-snapshot</id>
-			<name>Avereon Apache Maven Snapshot Repository</name>
-			<url>https://repo.avereon.com/avn-snapshot</url>
+			<id>acromere-snapshot</id>
+			<name>Acromere Apache Maven Snapshot Repository</name>
+			<url>https://repo.acromere.com/acromere-snapshot</url>
 		</snapshotRepository>
 	</distributionManagement>
 

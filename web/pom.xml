@@ -11,15 +11,15 @@
 		<relativePath></relativePath>
 	</parent>
 
-	<groupId>com.avereon.pom</groupId>
+	<groupId>com.acromere.pom</groupId>
 	<artifactId>web</artifactId>
-	<version>3.8.0</version>
+	<version>1.0</version>
 	<packaging>pom</packaging>
 
-	<name>Avereon Web Parent POM</name>
-	<description>The web pom for all Avereon web projects using Maven</description>
+	<name>Acromere Web Parent POM</name>
+	<description>The web pom for all Acromere web projects using Maven</description>
 	<inceptionYear>2017</inceptionYear>
-	<url>https://www.avereon.com/</url>
+	<url>https://www.acromere.com/</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -55,33 +55,33 @@
 	</properties>
 
 	<organization>
-		<name>Avereon</name>
-		<url>https://www.avereon.com/</url>
+		<name>Acromere</name>
+		<url>https://www.acromere.com/</url>
 	</organization>
 
 	<repositories>
 		<repository>
-			<id>avn</id>
-			<url>https://repo.avereon.com/avn</url>
+			<id>acm</id>
+			<url>https://repo.acromere.com/acm</url>
 		</repository>
 	</repositories>
 
 	<pluginRepositories>
 		<pluginRepository>
-			<id>avn-plugin</id>
-			<url>https://repo.avereon.com/avn</url>
+			<id>acm-plugin</id>
+			<url>https://repo.acromere.com/acm</url>
 		</pluginRepository>
 	</pluginRepositories>
 
 	<distributionManagement>
 		<repository>
-			<id>avn-release</id>
-			<url>https://repo.avereon.com/avn-release/</url>
+			<id>acm-release</id>
+			<url>https://repo.acromere.com/acm-release/</url>
 		</repository>
 
 		<snapshotRepository>
-			<id>avn-snapshot</id>
-			<url>https://repo.avereon.com/avn-snapshot/</url>
+			<id>acm-snapshot</id>
+			<url>https://repo.acromere.com/acm-snapshot/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -264,7 +264,7 @@
 				</plugin>
 
 				<plugin>
-					<groupId>com.avereon</groupId>
+					<groupId>com.acromere</groupId>
 					<artifactId>cameo</artifactId>
 					<version>${cameo.version}</version>
 				</plugin>
