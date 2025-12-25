@@ -14,21 +14,21 @@
 
 	<repositories>
 		<repository>
-			<id>acromere</id>
-			<url>https://repo.acromere.com/acromere</url>
+			<id>acm</id>
+			<url>https://repo.acromere.com/acm</url>
 		</repository>
 	</repositories>
 
 	<distributionManagement>
 		<repository>
-			<id>acromere-release</id>
+			<id>acm-release</id>
 			<name>Acromere Apache Maven Release Repository</name>
-			<url>https://repo.acromere.com/acromere-release</url>
+			<url>https://repo.acromere.com/acm-release</url>
 		</repository>
 		<snapshotRepository>
-			<id>acromere-snapshot</id>
+			<id>acm-snapshot</id>
 			<name>Acromere Apache Maven Snapshot Repository</name>
-			<url>https://repo.acromere.com/acromere-snapshot</url>
+			<url>https://repo.acromere.com/acm-snapshot</url>
 		</snapshotRepository>
 	</distributionManagement>
 
