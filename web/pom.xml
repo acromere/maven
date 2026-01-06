@@ -46,12 +46,11 @@
 		<buildnumber.maven.version>3.2.1</buildnumber.maven.version>
 		<exec.maven.version>3.5.0</exec.maven.version>
 
-		<zarra.version>0.8</zarra.version>
-		<zenna.version>0.8</zenna.version>
-		<zerra.version>0.8</zerra.version>
-		<zevra.version>0.8</zevra.version>
+		<zenna.version>0.12-SNAPSHOT</zenna.version>
+		<zerra.version>0.12-SNAPSHOT</zerra.version>
+		<zevra.version>0.12-SNAPSHOT</zevra.version>
 
-		<cameo.version>2.12</cameo.version>
+		<cameo.version>2.13-SNAPSHOT</cameo.version>
 	</properties>
 
 	<organization>
