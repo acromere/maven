@@ -29,18 +29,18 @@ jobs:
 
       - name: Deploy TOP POM
         env:
-          ACM_REPO_USERNAME: ${{ secrets.ACM_REPO_USERNAME }}
-          ACM_REPO_PASSWORD: ${{ secrets.ACM_REPO_PASSWORD }}
+          ACM_MAVEN_REPO_USERNAME: ${{ secrets.ACM_MAVEN_REPO_USERNAME }}
+          ACM_MAVEN_REPO_PASSWORD: ${{ secrets.ACM_MAVEN_REPO_PASSWORD }}
         run: mvn --settings .github/settings.xml -B -P top -U help:active-profiles clean deploy:deploy
 
       - name: Deploy POMS
         env:
-          ACM_REPO_USERNAME: ${{ secrets.ACM_REPO_USERNAME }}
-          ACM_REPO_PASSWORD: ${{ secrets.ACM_REPO_PASSWORD }}
+          ACM_MAVEN_REPO_USERNAME: ${{ secrets.ACM_MAVEN_REPO_USERNAME }}
+          ACM_MAVEN_REPO_PASSWORD: ${{ secrets.ACM_MAVEN_REPO_PASSWORD }}
         run: mvn --settings .github/settings.xml -B -P poms -U help:active-profiles clean deploy:deploy
 
       - name: Deploy JARS
         env:
-          ACM_REPO_USERNAME: ${{ secrets.ACM_REPO_USERNAME }}
-          ACM_REPO_PASSWORD: ${{ secrets.ACM_REPO_PASSWORD }}
+          ACM_MAVEN_REPO_USERNAME: ${{ secrets.ACM_MAVEN_REPO_USERNAME }}
+          ACM_MAVEN_REPO_PASSWORD: ${{ secrets.ACM_MAVEN_REPO_PASSWORD }}
         run: mvn --settings .github/settings.xml -B -P asms -U help:active-profiles clean deploy
