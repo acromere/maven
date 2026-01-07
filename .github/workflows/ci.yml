@@ -1,4 +1,4 @@
-name: CI
+name: Acromere Maven Parent POM CI
 
 on:
   workflow_dispatch:
