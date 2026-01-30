@@ -24,7 +24,7 @@
 		<!-- Version numbers updated 28 Apr 2025 -->
 		<product-name>${project.name}</product-name>
 		<product-identifier>${project.artifactId}</product-identifier>
-		<asm.version>3.6.0</asm.version>
+		<asm.version>1.0-SNAPSHOT</asm.version>
 	</properties>
 
 	<repositories>
