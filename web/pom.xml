@@ -29,7 +29,6 @@
 		<java.version>21</java.version>
 
 		<hamcrest.version>3.0</hamcrest.version>
-		<junit-jupiter.version>5.14.2</junit-jupiter.version>
 		<lombok.version>1.18.42</lombok.version>
 
 		<maven.compiler.version>3.14.1</maven.compiler.version>
