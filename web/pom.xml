@@ -52,6 +52,9 @@
 		<zevra.version>0.12-SNAPSHOT</zevra.version>
 
 		<cameo.version>2.13-SNAPSHOT</cameo.version>
+
+		<assertj.version>3.27.6</assertj.version>
+		<junit.version>6.0.1</junit.version>
 	</properties>
 
 	<organization>
@@ -107,6 +110,13 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.assertj</groupId>
+			<artifactId>assertj-core</artifactId>
+			<version>${assertj.version}</version>
 			<scope>test</scope>
 		</dependency>
 
