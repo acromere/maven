@@ -27,17 +27,6 @@
 		<java.version>25</java.version>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>acm</id>
-			<url>https://repo.acromere.com/acm</url>
-		</repository>
-		<repository>
-			<id>acm</id>
-			<url>https://repo.acromere.com/acm</url>
-		</repository>
-	</repositories>
-
 	<dependencies>
 
 		<dependency>
