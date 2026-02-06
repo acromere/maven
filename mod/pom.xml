@@ -33,15 +33,15 @@
 			<url>https://repo.acromere.com/acm</url>
 		</repository>
 		<repository>
-			<id>avn</id>
-			<url>https://repo.avereon.com/avn</url>
+			<id>acm</id>
+			<url>https://repo.acromere.com/acm</url>
 		</repository>
 	</repositories>
 
 	<dependencies>
 
 		<dependency>
-			<groupId>com.avereon</groupId>
+			<groupId>com.acromere</groupId>
 			<artifactId>xenon</artifactId>
 			<version>${xenon.version}</version>
 			<scope>provided</scope>
