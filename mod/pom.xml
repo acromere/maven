@@ -21,7 +21,7 @@
 
 	<properties>
 		<!-- Version numbers updated 31 Mar 2026 -->
-		<!-- Minimum dependency versions -->
+		<!-- Default dependency versions -->
 		<xenon.version>2.0-SNAPSHOT</xenon.version>
 		<!-- Cannot be higher than Xenon -->
 		<java.version>25</java.version>

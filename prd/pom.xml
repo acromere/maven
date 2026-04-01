@@ -25,6 +25,7 @@
 		<product-name>${project.name}</product-name>
 		<product-identifier>${project.artifactId}</product-identifier>
 		<asm.version>1.0-SNAPSHOT</asm.version>
+		<cameo.version>2.13-SNAPSHOT</cameo.version>
 	</properties>
 
 	<repositories>
