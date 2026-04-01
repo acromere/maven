@@ -22,10 +22,12 @@
 
 	<properties>
 		<!-- Version numbers updated 28 Apr 2025 -->
+		<xenon.version>2.0-SNAPSHOT</xenon.version>
+		<cameo.version>2.13-SNAPSHOT</cameo.version>
+		<asm.version>1.0-SNAPSHOT</asm.version>
+
 		<product-name>${project.name}</product-name>
 		<product-identifier>${project.artifactId}</product-identifier>
-		<asm.version>1.0-SNAPSHOT</asm.version>
-		<cameo.version>2.13-SNAPSHOT</cameo.version>
 	</properties>
 
 	<repositories>
