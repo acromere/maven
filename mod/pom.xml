@@ -20,9 +20,9 @@
 	<description>The parent POM for Acromere Xenon modules.</description>
 
 	<properties>
-		<!-- Version numbers updated 05 Oct 2025 -->
+		<!-- Version numbers updated 31 Mar 2026 -->
 		<!-- Minimum dependency versions -->
-		<xenon.version>1.10-SNAPSHOT</xenon.version>
+		<xenon.version>2.0-SNAPSHOT</xenon.version>
 		<!-- Cannot be higher than Xenon -->
 		<java.version>25</java.version>
 	</properties>
