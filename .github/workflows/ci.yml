@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-java@v5
         with:
           distribution: 'temurin'
-          java-version: 21
+          java-version: 25
 
       - name: Maven Repository Cache
         uses: actions/cache@v5
@@ -28,18 +28,21 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: Deploy TOP POM
+        if: github.ref == 'refs/heads/main' && github.actor != 'dependabot[bot]'
         env:
           ACM_MAVEN_REPO_USERNAME: ${{ secrets.ACM_MAVEN_REPO_USERNAME }}
           ACM_MAVEN_REPO_PASSWORD: ${{ secrets.ACM_MAVEN_REPO_PASSWORD }}
         run: mvn --settings .github/settings.xml -B -P top -U help:active-profiles clean deploy:deploy
 
       - name: Deploy POMS
+        if: github.ref == 'refs/heads/main' && github.actor != 'dependabot[bot]'
         env:
           ACM_MAVEN_REPO_USERNAME: ${{ secrets.ACM_MAVEN_REPO_USERNAME }}
           ACM_MAVEN_REPO_PASSWORD: ${{ secrets.ACM_MAVEN_REPO_PASSWORD }}
         run: mvn --settings .github/settings.xml -B -P poms -U help:active-profiles clean deploy:deploy
 
-      - name: Deploy JARS
+      - name: Deploy ASMS
+        if: github.ref == 'refs/heads/main' && github.actor != 'dependabot[bot]'
         env:
           ACM_MAVEN_REPO_USERNAME: ${{ secrets.ACM_MAVEN_REPO_USERNAME }}
           ACM_MAVEN_REPO_PASSWORD: ${{ secrets.ACM_MAVEN_REPO_PASSWORD }}
