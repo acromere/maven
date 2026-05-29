@@ -29,7 +29,7 @@
 		<mapstruct.version>1.6.3</mapstruct.version>
 
 		<!-- Default dependency versions -->
-		<assertj.version>3.27.6</assertj.version>
+		<assertj.version>3.27.7</assertj.version>
 		<junit.version>6.1.0</junit.version>
 
 		<!-- Full version required for some dependencies -->
