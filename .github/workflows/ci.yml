@@ -6,6 +6,9 @@ on:
   push:
     branches: [ main ]
 
+env:
+  JAVA_VERSION: "25"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,7 +20,7 @@ jobs:
         uses: actions/setup-java@v5
         with:
           distribution: 'temurin'
-          java-version: 25
+          java-version: ${{env.JAVA_VERSION}}
 
       - name: Maven Repository Cache
         uses: actions/cache@v5
