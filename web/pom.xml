@@ -14,7 +14,7 @@
 
 	<groupId>com.acromere.pom</groupId>
 	<artifactId>web</artifactId>
-	<version>1.1-SNAPSHOT</version>
+	<version>1.1</version>
 	<packaging>pom</packaging>
 
 	<name>Acromere Web Parent POM</name>
