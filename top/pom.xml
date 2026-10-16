@@ -22,7 +22,7 @@
 		<maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
 		<project.timestamp>${maven.build.timestamp}</project.timestamp>
 
-		<!-- Version numbers updated 28 Apr 2025 -->
+		<!-- Version numbers reviewed 28 Apr 2025 -->
 		<maven.compiler.version>3.15.0</maven.compiler.version>
 		<maven.resources.version>3.4.0</maven.resources.version>
 		<maven.surefire.version>3.5.6</maven.surefire.version>
