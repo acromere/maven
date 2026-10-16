@@ -21,6 +21,24 @@ define common configuration, resources and definitions for all Acromere projects
 
 ## Builds
 
-This project is configure for automatic build and deployment, just like any 
+This project is configured for automatic build and deployment, just like any 
 project. This ensures that changes to the poms are deployed in a timely fashion
-and that dependent projects are rebuilt when the parent poms change. 
+and that dependent projects are rebuilt when the parent poms change.
+
+The main difference is that this project has two default branches, "main" and 
+"next". The main branch is just like the main branch for other projects. It 
+contains the production-ready code and should always use non-snapshot versions 
+in the poms. The next branch is the other way around. It is the snapshot branch 
+and is the only deployed branch that allows snapshot versions in the poms. 
+
+Builds from the main branch are deployed as release artifacts, and builds from 
+the next branch are deployed as snapshot artifacts.
+
+## Branching Strategy
+
+```aiignore
+>--- next ---       main --->
+     /  \     \     /
+     \  /      \   /
+   <branch>   <branch>
+```
