@@ -34,7 +34,7 @@ jobs:
         env:
           ACM_MAVEN_REPO_USERNAME: ${{ secrets.ACM_MAVEN_REPO_USERNAME }}
           ACM_MAVEN_REPO_PASSWORD: ${{ secrets.ACM_MAVEN_REPO_PASSWORD }}
-        run: mvn --settings .github/settings.xml -B -U help:active-profiles clean package
+        run: mvn --settings .github/settings.xml -B -P top,poms,asms -U help:active-profiles clean package
 
       - name: Deploy TOP POM
         if: github.actor != 'dependabot[bot]' && github.ref_name == 'main' || github.ref_name == 'next'
