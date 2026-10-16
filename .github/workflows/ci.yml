@@ -12,7 +12,55 @@ env:
 jobs:
   build-main:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/${{ github.ref_name }}'
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Fetch sources
+        uses: actions/checkout@v6
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: ${{env.JAVA_VERSION}}
+
+      - name: Maven Repository Cache
+        uses: actions/cache@v5
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Build POMS
+        env:
+          ACM_MAVEN_REPO_USERNAME: ${{ secrets.ACM_MAVEN_REPO_USERNAME }}
+          ACM_MAVEN_REPO_PASSWORD: ${{ secrets.ACM_MAVEN_REPO_PASSWORD }}
+        run: mvn --settings .github/settings.xml -B -P top -U help:active-profiles clean deploy:deploy
+
+      - name: Deploy TOP POM
+        if: github.actor != 'dependabot[bot]'
+        env:
+          ACM_MAVEN_REPO_USERNAME: ${{ secrets.ACM_MAVEN_REPO_USERNAME }}
+          ACM_MAVEN_REPO_PASSWORD: ${{ secrets.ACM_MAVEN_REPO_PASSWORD }}
+        run: mvn --settings .github/settings.xml -B -P top -U help:active-profiles clean deploy:deploy
+
+      - name: Deploy POMS
+        if: github.actor != 'dependabot[bot]'
+        env:
+          ACM_MAVEN_REPO_USERNAME: ${{ secrets.ACM_MAVEN_REPO_USERNAME }}
+          ACM_MAVEN_REPO_PASSWORD: ${{ secrets.ACM_MAVEN_REPO_PASSWORD }}
+        run: mvn --settings .github/settings.xml -B -P poms -U help:active-profiles clean deploy:deploy
+
+      - name: Deploy ASMS
+        if: github.actor != 'dependabot[bot]'
+        env:
+          ACM_MAVEN_REPO_USERNAME: ${{ secrets.ACM_MAVEN_REPO_USERNAME }}
+          ACM_MAVEN_REPO_PASSWORD: ${{ secrets.ACM_MAVEN_REPO_PASSWORD }}
+        run: mvn --settings .github/settings.xml -B -P asms -U help:active-profiles clean deploy
+
+  build-next:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/next'
     steps:
       - name: Fetch sources
         uses: actions/checkout@v6
