@@ -24,7 +24,7 @@
 
 		<!-- Version numbers updated 28 Apr 2025 -->
 		<maven.compiler.version>3.15.0</maven.compiler.version>
-		<maven.resources.version>3.4.0</maven.resources.version>
+		<maven.resources.version>3.5.0</maven.resources.version>
 		<maven.surefire.version>3.5.6</maven.surefire.version>
 		<maven.jar.version>3.5.0</maven.jar.version>
 		<maven.war.version>3.5.1</maven.war.version>
@@ -36,7 +36,7 @@
 		<maven.javadoc.version>3.12.0</maven.javadoc.version>
 		<maven.dependency.version>3.11.0</maven.dependency.version>
 
-		<buildnumber.maven.version>3.2.1</buildnumber.maven.version>
+		<buildnumber.maven.version>3.3.1</buildnumber.maven.version>
 		<exec.maven.version>3.6.4</exec.maven.version>
 
 		<jlink.module.path>${basedir}/target/dependency${path.separator}${basedir}/target/${project.build.finalName}.${project.packaging}</jlink.module.path>
