@@ -32,7 +32,7 @@
 <!--		<mirror>-->
 <!--			<id>central-mirror</id>-->
 <!--			<name>Mirror to Acromere Maven Repository</name>-->
-<!--			<url>https://repo.acromere.com/central</url>-->
+<!--			<url>https://repo.acromere.com/central/</url>-->
 <!--			<mirrorOf>central</mirrorOf>-->
 <!--		</mirror>-->
 	</mirrors>
