@@ -6,7 +6,7 @@
 
 	<groupId>com.acromere.pom</groupId>
 	<artifactId>agg</artifactId>
-	<version>1.0.1</version>
+	<version>1.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Acromere Pom Aggregator</name>

@@ -8,7 +8,7 @@
 
 	<groupId>com.acromere.pom</groupId>
 	<artifactId>top</artifactId>
-	<version>1.0.1</version>
+	<version>1.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Acromere Top Parent POM</name>
@@ -22,16 +22,16 @@
 		<maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
 		<project.timestamp>${maven.build.timestamp}</project.timestamp>
 
-		<!-- Version numbers updated 28 Apr 2025 -->
+		<!-- Version numbers reviewed 28 Apr 2025 -->
 		<maven.compiler.version>3.15.0</maven.compiler.version>
 		<maven.resources.version>3.5.0</maven.resources.version>
-		<maven.surefire.version>3.5.6</maven.surefire.version>
+		<maven.surefire.version>3.6.0</maven.surefire.version>
 		<maven.jar.version>3.5.1</maven.jar.version>
 		<maven.war.version>3.5.1</maven.war.version>
 		<maven.plugin.version>3.15.2</maven.plugin.version>
 		<maven.jarsigner.version>3.1.0</maven.jarsigner.version>
 		<maven.assembly.version>3.8.0</maven.assembly.version>
-		<maven.deploy.version>3.1.4</maven.deploy.version>
+		<maven.deploy.version>3.2.0</maven.deploy.version>
 		<maven.source.version>3.4.0</maven.source.version>
 		<maven.javadoc.version>3.12.0</maven.javadoc.version>
 		<maven.dependency.version>3.11.0</maven.dependency.version>
