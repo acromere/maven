@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>4.0.2</version>
+		<version>4.1.1</version>
 		<relativePath/>
 	</parent>
 
@@ -25,11 +25,11 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<!-- Version numbers updated 02 Feb 2025 -->
+		<!-- Version numbers reviewed 02 Feb 2025 -->
 		<java.version>21</java.version>
 
 		<hamcrest.version>3.0</hamcrest.version>
-		<lombok.version>1.18.42</lombok.version>
+		<lombok.version>1.18.48</lombok.version>
 
 		<maven.compiler.version>3.15.0</maven.compiler.version>
 		<maven.resources.version>3.5.0</maven.resources.version>
@@ -47,10 +47,10 @@
 		<buildnumber.maven.version>3.2.1</buildnumber.maven.version>
 		<exec.maven.version>3.5.0</exec.maven.version>
 
+		<!-- Version numbers reviewed 16 Oct 2026 -->
 		<zenna.version>0.12-SNAPSHOT</zenna.version>
 		<zerra.version>0.12-SNAPSHOT</zerra.version>
 		<zevra.version>0.12-SNAPSHOT</zevra.version>
-
 		<cameo.version>2.13-SNAPSHOT</cameo.version>
 
 		<assertj.version>3.27.7</assertj.version>
