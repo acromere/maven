@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   pull_request:
   push:
-    branches: [ main, next ]
+    branches: [ main, release ]
 
 env:
   JAVA_VERSION: "25"
@@ -37,21 +37,21 @@ jobs:
         run: mvn --settings .github/settings.xml -B -U help:active-profiles clean package
 
       - name: Deploy TOP POM
-        if: github.actor != 'dependabot[bot]' && github.ref_name == 'main' || github.ref_name == 'next'
+        if: github.actor != 'dependabot[bot]' && github.ref_name == 'main' || github.ref_name == 'release'
         env:
           ACM_MAVEN_REPO_USERNAME: ${{ secrets.ACM_MAVEN_REPO_USERNAME }}
           ACM_MAVEN_REPO_PASSWORD: ${{ secrets.ACM_MAVEN_REPO_PASSWORD }}
         run: mvn --settings .github/settings.xml -B -P top -U help:active-profiles clean deploy:deploy
 
       - name: Deploy POMS
-        if: github.actor != 'dependabot[bot]' && github.ref_name == 'main' || github.ref_name == 'next'
+        if: github.actor != 'dependabot[bot]' && github.ref_name == 'main' || github.ref_name == 'release'
         env:
           ACM_MAVEN_REPO_USERNAME: ${{ secrets.ACM_MAVEN_REPO_USERNAME }}
           ACM_MAVEN_REPO_PASSWORD: ${{ secrets.ACM_MAVEN_REPO_PASSWORD }}
         run: mvn --settings .github/settings.xml -B -P poms -U help:active-profiles clean deploy:deploy
 
       - name: Deploy ASMS
-        if: github.actor != 'dependabot[bot]' && github.ref_name == 'main' || github.ref_name == 'next'
+        if: github.actor != 'dependabot[bot]' && github.ref_name == 'main' || github.ref_name == 'release'
         env:
           ACM_MAVEN_REPO_USERNAME: ${{ secrets.ACM_MAVEN_REPO_USERNAME }}
           ACM_MAVEN_REPO_PASSWORD: ${{ secrets.ACM_MAVEN_REPO_PASSWORD }}
