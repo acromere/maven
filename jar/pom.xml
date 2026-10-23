@@ -24,7 +24,7 @@
 		<!-- Version numbers reviewed 28 Apr 2025 -->
 
 		<!-- Version ranges not allowed in annotation processors -->
-		<jspecify.version>1.0.0</jspecify.version>
+		<jspecify.version>1.0.1</jspecify.version>
 		<lombok.version>1.18.48</lombok.version>
 		<mapstruct.version>1.6.3</mapstruct.version>
 
